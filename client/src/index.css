@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@import "tailwindcss";
+
+/* #1A1A1A; */
+
+@theme {
+    --font-livvic: "Livvic", sans-serif;
+    --font-main: "IBM Plex Sans Thai", sans-serif;
+    --font-itim: "Itim", cursive;
+    --color-neutral: #FAF8F5;
+    --color-secondary: #1A1A1A;
+    --color-accent: #CB3535;
+    --color-secondary-content: #F0EBE8;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-hover {
+    transition: all 400ms ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-0.3125rem);
+    /* -1.25 * 0.25rem = -5px */
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
